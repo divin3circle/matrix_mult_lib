@@ -15,3 +15,30 @@ gcc -c src/matrix_mult.c -o matrix_mult.o
 ar rcs libmatrix_mult.a matrix_mult.o
 gcc -shared -o libmatrix_mult.so src/matrix_mult.c
 ```
+
+### Usage
+
+Include the header and link against the library in your C code:
+
+```c
+
+#include "matrix_mult.h"
+
+int main() {
+    int m_1[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+    int m_2[3][3] = { {9, 8, 7}, {6, 5, 4}, {3, 2, 1} };
+    int res[3][3];
+
+    matrix_multiply(m_1, m_2, res);
+
+    // Print or use the result...
+    return 0;
+}
+```
+
+Compile your cod with the static library:
+
+```sh
+
+gcc main.c -L. -lmatrix_mult -o main
+```
