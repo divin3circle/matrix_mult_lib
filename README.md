@@ -42,3 +42,7 @@ Compile your code with the static library:
 
 gcc main.c -L. -lmatrix_mult -o main
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
