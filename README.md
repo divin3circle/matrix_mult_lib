@@ -36,7 +36,7 @@ int main() {
 }
 ```
 
-Compile your cod with the static library:
+Compile your code with the static library:
 
 ```sh
 
