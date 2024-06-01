@@ -5,6 +5,7 @@ class MatrixMultLibConan(ConanFile):
     name = "matrix_mult_lib"
     version = "0.1.0"
     license = "MIT"
+    author = "divin3circle"
     url = "https://github.com/divin3circle/matrix_mult_lib"
     description = "A simple C library for 3x3 matrix multiplication"
     settings = "os", "compiler", "build_type", "arch"
